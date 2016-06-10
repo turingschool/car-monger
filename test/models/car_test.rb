@@ -80,6 +80,6 @@ class CarTest < ActiveSupport::TestCase
     car_three   = Car.create( city_mpg: "10")
     car_four = Car.create(city_mpg: '25')
 
-    assert_equal [car_two, car_four], Car.city_mpg_less_than("19")
+    assert_equal [car_two, car_four], Car.city_mpg_more_than("19")
   end
 end
