@@ -11,6 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160610150716) do
+
+  create_table "cars", force: :cascade do |t|
+    t.string   "atv_type"
+    t.integer  "city_mpg"
+    t.string   "co2"
+    t.string   "combined_mpg"
+    t.string   "cylinders"
+    t.string   "liters"
+    t.string   "drive"
+    t.string   "fe_score"
+    t.string   "fuel_type"
+    t.integer  "highway_mpg"
+    t.string   "make"
+    t.string   "model"
+    t.string   "transmission"
+    t.string   "year"
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+  end
 
 end
